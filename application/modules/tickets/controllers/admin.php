@@ -105,9 +105,9 @@ class Admin extends MY_Controller {
 				$config['charset'] = 'UTF-8';
 				$this->load->library('email');
 				$this->email->initialize($config);
-				$this->email->from($this->data->config->noreply);
+				$this->email->from($this->data['config']->noreply);
 				$this->email->to($ticket->email);
-				$this->email->reply_to($this->data->config->system_email, $this->session->userdata('sitename'));
+				$this->email->reply_to($this->data['config']->system_email, $this->session->userdata('sitename'));
 				$this->email->subject('[REPONSE] '.$ticket->title);
 				$this->email->message($message);
 				@$this->email->send();
