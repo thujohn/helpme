@@ -99,7 +99,7 @@ class Tickets extends MY_Controller {
 					$this->ticketManager->save_attachment($attachment);
 				}
 
-				$message = 'Une réponse a été postée par '.$this->session->userdata('lastname').' '.$this->session->userdata('firstname').' ('.$this->session->userdata('sitename').') : '.site_url('tickets/'.$ticket->id);
+				$message = 'Une réponse a été postée par '.$this->session->userdata('lastname').' '.$this->session->userdata('firstname').' ('.$this->session->userdata('sitename').') : '.site_url('ticket/'.$ticket->id);
 
 				$config['mailtype'] = 'html';
 				$config['charset'] = 'UTF-8';
@@ -253,7 +253,7 @@ class Tickets extends MY_Controller {
 					$this->ticketManager->save_attachment($attachment);
 				}
 
-				$message = 'Un ticket a été ouvert par '.$this->session->userdata('lastname').' '.$this->session->userdata('firstname').' ('.$this->session->userdata('sitename').') : '.site_url('tickets/'.$valid);
+				$message = 'Un ticket a été ouvert par '.$this->session->userdata('lastname').' '.$this->session->userdata('firstname').' ('.$this->session->userdata('sitename').') : '.site_url('ticket/'.$valid);
 
 				$config['mailtype'] = 'html';
 				$config['charset'] = 'UTF-8';

@@ -99,7 +99,7 @@ class Admin extends MY_Controller {
 					$this->ticketManager->save_attachment($attachment);
 				}
 
-				$message = 'Le support a apporté une réponse à votre ticket : '.site_url('tickets/'.$ticket->id);
+				$message = 'Le support a apporté une réponse à votre ticket : '.site_url('ticket/'.$ticket->id);
 
 				$config['mailtype'] = 'html';
 				$config['charset'] = 'UTF-8';
