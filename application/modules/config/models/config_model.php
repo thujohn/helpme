@@ -19,9 +19,9 @@ class Config_model extends CI_Model{
 						->result();
 	}
 
-	function update_config($options){
+	function update($options){
 		if (!$this->_required(
-			array('sitename', 'noreply', 'system_email', 'address', 'phone', 'limit_articles_acc'),
+			array('sitename', 'noreply', 'system_email'),
 			$options)
 		) return false;
 
