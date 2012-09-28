@@ -7,7 +7,6 @@ class User extends CI_Controller {
 		$this->load->model('config/config_model', 'configManager');
 		$this->load->model('user/user_model', 'userManager');
 		$this->layout->set_theme('default');
-		$this->layout->add_css('default');
 		$this->layout->add_css('login');
 		if (!$this->userManager->isLoggedIn() && $this->uri->segment(2) !== 'login' && $this->uri->segment(2) !== 'forgot'){
 			redirect('user/login','refresh');
