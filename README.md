@@ -1,6 +1,6 @@
 # Help me !
 
-* [Website](http://jonathan.thuau.fr/)
+* [Demo](http://helpme.thuau.fr/) (demo / demo)
 * [License](MIT)
 * Version: 1.0.0
 
