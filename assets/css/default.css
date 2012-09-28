@@ -1,0 +1,118 @@
+body {position:relative;padding-top:60px;}
+footer {padding:20px 0;}
+
+.navbar .brand {color:#fff;}
+
+.left {float:left;}
+.right {float:right;}
+.tleft {text-align:left;}
+.tright {text-align:right;}
+.tcenter {text-align:center;}
+
+.form-horizontal .error {color:#cf0c0c;}
+
+#container_error {margin:10px 0 30px 0;padding:0 20px 10px 20px;border:1px solid #ddd;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
+
+#top-search {position:relative;}
+#top-search .icon-search {position:absolute;left:10px;top:7px;}
+#top-search .search-query {padding-left:28px;line-height:19px;}
+
+#note {color:#d23a22;line-height:14px;margin-bottom:15px;}
+
+#doc-tpl {margin:10px 0 30px 0;padding:0 20px 10px 20px;border:1px solid #ddd;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
+.first-post {text-align:justify;color:#b94a48;background-color:#fcfcfc;}
+.next-post {text-align:justify;color:#555;}
+.bs-docs-example .date span {color:#777;}
+
+.table .table_id {width:24px;}
+.table .table_act {width:24px;}
+.table .table_date {width:75px;}
+.table .table_email {width:100px;}
+.table td div {height:24px;line-height:24px;}
+.table td div a {display:block;}
+
+.ct-list {width:100%;margin:10px 0 0;padding:0;background-color:#fff;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;-webkit-box-shadow:0 1px 4px rgba(0,0,0,.065);-moz-box-shadow:0 1px 4px rgba(0,0,0,.065);box-shadow:0 1px 4px rgba(0,0,0,.065);}
+.ct-list > li {border:1px solid #e5e5e5;margin:0 0 -1px;}
+.ct-list > li a {display:block;*width:190px;margin:0 0 -1px;padding:8px 14px;}
+.ct-list > li:first-child {-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;}
+.ct-list > li:last-child {-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;}
+.ct-list > .active > a {position:relative;z-index:2;padding:9px 15px;border:0;text-shadow:0 1px 0 rgba(0,0,0,.15);-webkit-box-shadow:inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);-moz-box-shadow:inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);box-shadow:inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);}
+.ct-list h2 {padding:0 2%;}
+.ct-list p {color:#444;font-size:12px;font-style:italic;padding-top:1%;line-height:16px;}
+.ticket_open .title {color:#468847;}
+.ticket_close .title {color:#b94947;}
+
+.bs-docs-sidenav {width:228px;margin:10px 0 0;padding:0;background-color:#fff;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;-webkit-box-shadow:0 1px 4px rgba(0,0,0,.065);-moz-box-shadow:0 1px 4px rgba(0,0,0,.065);box-shadow:0 1px 4px rgba(0,0,0,.065);}
+.bs-docs-sidenav > li {border:1px solid #e5e5e5;margin:0 0 -1px;}
+.bs-docs-sidenav > li a {display:block;*width:190px;margin:0 0 -1px;padding:8px 14px;}
+.bs-docs-sidenav > li:first-child {-webkit-border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;}
+.bs-docs-sidenav > li:last-child {-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;}
+.bs-docs-sidenav > .active > a {position:relative;z-index:2;padding:9px 15px;border:0;text-shadow:0 1px 0 rgba(0,0,0,.15);-webkit-box-shadow:inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);-moz-box-shadow:inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);box-shadow:inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);}
+.bs-docs-sidenav .icon-chevron-right {float:right;margin-top:2px;margin-right:-6px;opacity:.25;}
+.bs-docs-sidenav > li > a:hover {background-color:#f5f5f5;}
+.bs-docs-sidenav a:hover .icon-chevron-right {opacity:.5;}
+.bs-docs-sidenav .active .icon-chevron-right,
+.bs-docs-sidenav .active a:hover .icon-chevron-right {background-image:url(../img/glyphicons-halflings-white.png);opacity:1;}
+.bs-docs-sidenav.affix {top:40px;}
+.bs-docs-sidenav.affix-bottom {position:absolute;top:auto;bottom:270px;}
+
+
+.bs-docs-example {position:relative;margin:15px 0;padding:39px 19px 14px;*padding-top:19px;background-color:#fff;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+.bs-docs-example .date {position:absolute;top:-1px;left:-1px;padding:3px 7px;font-size:12px;font-weight:bold;background-color:#f5f5f5;border:1px solid #ddd;color:#9da0a4;-webkit-border-radius:4px 0 4px 0;-moz-border-radius:4px 0 4px 0;border-radius:4px 0 4px 0;}
+.bs-docs-example > p:last-child {margin-bottom:0;}
+.bs-docs-example .table, .bs-docs-example .progress, .bs-docs-example .well, .bs-docs-example .alert, .bs-docs-example .hero-unit, .bs-docs-example .pagination, .bs-docs-example .navbar, .bs-docs-example > .nav, .bs-docs-example blockquote {margin-bottom:5px;}
+.bs-docs-example .pagination {margin-top:0;}
+
+.com {color:#93a1a1;}
+.lit {color:#195f91;}
+.pun, .opn, .clo {color:#93a1a1;}
+.fun {color:#dc322f;}
+.str, .atv {color:#d14;}
+.kwd, .prettyprint .tag {color:#1e347b;}
+.typ, .atn, .dec, .var {color:teal;}
+.pln {color:#48484c;}
+.prettyprint {padding:8px;background-color:#f7f7f9;border:1px solid #e1e1e8;}
+.bs-docs-example + .prettyprint {margin-top:-20px;padding-top:15px;}
+
+
+.hidden {display:none;visibility:hidden;}
+.visible-phone {display:none;}
+.visible-tablet {display:none;}
+.visible-desktop {display:block;}
+.hidden-phone {display:block;}
+.hidden-tablet {display:block;}
+.hidden-desktop {display:none;}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width:768px) and (max-width:979px) {
+	body {padding-top:0;}
+	.bs-docs-sidenav {width:166px;margin-top:20px;}
+	.bs-docs-sidenav.affix {top:0;}
+	.visible-tablet {display:block;}
+	.hidden-tablet {display:none;}
+	.hidden-desktop {display:block;}
+	.visible-desktop {display:none;}
+}
+
+/* Tablet
+------------------------- */
+@media (max-width:767px) {
+	body {padding-top:0;}
+	.bs-docs-social {margin:0 -20px;}
+	.show-grid [class*="span"] {margin-bottom:5px;}
+	.bs-docs-sidenav {width:auto;margin-bottom:20px;}
+	.bs-docs-sidenav.affix {position:static;width:auto;top:0;}
+	.visible-phone {display:block;}
+	.hidden-phone {display:none;}
+	.hidden-desktop {display:block;}
+	.visible-desktop {display:none;}
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width:480px) {
+	body {padding-top:0;}
+	h2 small {display:block;}
+	table code {white-space:normal;word-wrap:break-word;word-break:break-all;}
+}

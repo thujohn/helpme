@@ -1,0 +1,5 @@
+#frm_login {width:250px;margin:0 auto;}
+#frm_login .ipt {margin:10px 0;}
+#frm_login label {float:left;width:32px;}
+#frm_login #username, #frm_login #password {float:left;width:200px;margin:7px 0 0 0;color:#444;}
+#frm_login #submit {margin:10px 0 0 0;}

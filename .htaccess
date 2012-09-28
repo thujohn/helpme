@@ -1,0 +1,11 @@
+Options -Indexes
+Options +FollowSymLinks
+
+RewriteEngine On
+
+
+RewriteCond $1 !^(index\.php|manager\.php|assets/|robots\.txt|favicon\.ico)
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php/$1 [L]
