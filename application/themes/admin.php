@@ -105,7 +105,7 @@
 		<div class="row">
 			<div class="span12">
 				<hr />
-				<div class="tcenter">&copy; <?php echo $config->sitename; ?> :: {elapsed_time} secondes :: <?php echo ($this->db->total_queries() > 1) ? $this->db->total_queries().' requêtes' : $this->db->total_queries().' requête'; ?></div>
+				<div class="tcenter">&copy; <a href="https://github.com/thujohn/helpme" target="_blank"><?php echo $config->sitename; ?></a> :: {elapsed_time} secondes :: <?php echo ($this->db->total_queries() > 1) ? $this->db->total_queries().' requêtes' : $this->db->total_queries().' requête'; ?></div>
 			</div>
 		</div>
 	</footer>

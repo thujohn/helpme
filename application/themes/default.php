@@ -109,7 +109,7 @@
 		<div class="row">
 			<div class="span12">
 				<hr />
-				<div class="tcenter">&copy; <?php echo $config->sitename; ?></div>
+				<div class="tcenter">&copy; <a href="https://github.com/thujohn/helpme" target="_blank"><?php echo $config->sitename; ?></a></div>
 			</div>
 		</div>
 	</footer>
