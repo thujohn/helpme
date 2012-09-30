@@ -12,7 +12,7 @@
 		<div class="control-group">
 			<label class="control-label" for="answer">Réponse</label>
 			<div class="controls">
-				<textarea id="answer" name="answer" cols="30" rows="10" style="width:98.5%;"><?php echo $question->answer; ?></textarea>
+				<textarea id="answer" name="answer" class="redactor_content" cols="30" rows="10" style="width:98.5%;"><?php echo $question->answer; ?></textarea>
 				<?php echo form_error('answer'); ?>
 			</div>
 		</div>

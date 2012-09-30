@@ -22,6 +22,10 @@ class Admin extends MY_Controller {
 
 	function create(){
 		$this->layout->set_title('Ajouter une question');
+		$this->layout->add_css('redactor');
+		$this->layout->add_js('redactor/fr');
+		$this->layout->add_js('redactor/redactor.min');
+		$this->layout->add_js('default');
 
 		$this->form_validation->set_rules('question','Question','trim|required|xss_clean');
 		$this->form_validation->set_rules('answer','Réponse','trim|required|xss_clean');
@@ -50,6 +54,10 @@ class Admin extends MY_Controller {
 		$this->data['question'] = $question;
 
 		$this->layout->set_title('Modifier une question');
+		$this->layout->add_css('redactor');
+		$this->layout->add_js('redactor/fr');
+		$this->layout->add_js('redactor/redactor.min');
+		$this->layout->add_js('default');
 
 		$this->form_validation->set_rules('question','Question','trim|required|xss_clean');
 		$this->form_validation->set_rules('answer','Réponse','trim|required|xss_clean');
