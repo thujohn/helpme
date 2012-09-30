@@ -262,7 +262,7 @@ class Tickets extends MY_Controller {
 				$this->email->from($this->data['config']->noreply);
 				$this->email->to($this->data['config']->system_email);
 				$this->email->reply_to($this->session->userdata('email'), $this->session->userdata('lastname').' '.$this->session->userdata('firstname').' ('.$this->session->userdata('sitename').')');
-				$this->email->subject('[Nouveau] '.$options['title']);
+				$this->email->subject('[NOUVEAU] '.$options['title']);
 				$this->email->message($message);
 				@$this->email->send();
 
@@ -285,6 +285,19 @@ class Tickets extends MY_Controller {
 		$options['state'] = 'close';
 
 		$this->ticketManager->update_ticket($options);
+
+		$message = 'Un ticket a été fermé par '.$this->session->userdata('lastname').' '.$this->session->userdata('firstname').' ('.$this->session->userdata('sitename').') : '.site_url('ticket/'.$ticket->id);
+
+		$config['mailtype'] = 'html';
+		$config['charset'] = 'UTF-8';
+		$this->load->library('email');
+		$this->email->initialize($config);
+		$this->email->from($this->data['config']->noreply);
+		$this->email->to($this->data['config']->system_email);
+		$this->email->reply_to($this->session->userdata('email'), $this->session->userdata('lastname').' '.$this->session->userdata('firstname').' ('.$this->session->userdata('sitename').')');
+		$this->email->subject('[RESOLU] '.$options['title']);
+		$this->email->message($message);
+		@$this->email->send();
 
 		redirect('ticket/'.$ticket->id, 'refresh');
 	}

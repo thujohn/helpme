@@ -99,7 +99,9 @@ class Admin extends MY_Controller {
 					$this->ticketManager->save_attachment($attachment);
 				}
 
-				$message = 'Le support a apporté une réponse à votre ticket : '.site_url('ticket/'.$ticket->id);
+				$message = $ticket->lastname.' '.$ticket->firstname.',<br /><br />';
+				$message .= 'Le support vient d\'apporter une réponse à votre demande : '.site_url('ticket/'.$ticket->id.'#post-'.$response).'<br /><br /><br />';
+				$message .= 'L\'équipe de support client '.$this->data['config']->sitename.'.';
 
 				$config['mailtype'] = 'html';
 				$config['charset'] = 'UTF-8';
@@ -239,6 +241,22 @@ class Admin extends MY_Controller {
 		$options['state'] = 'close';
 
 		$this->ticketManager->update_ticket($options);
+
+		$message = $ticket->lastname.' '.$ticket->firstname.',<br /><br />';
+		$message .= 'Le support vient d\'apporter une réponse à votre demande : '.site_url('ticket/'.$ticket->id).'<br />';
+		$message .= 'Nous considérons que votre problème a été résolu.<br /><br /><br />';
+		$message .= 'L\'équipe de support client '.$this->data['config']->sitename.'.';
+
+		$config['mailtype'] = 'html';
+		$config['charset'] = 'UTF-8';
+		$this->load->library('email');
+		$this->email->initialize($config);
+		$this->email->from($this->data['config']->noreply);
+		$this->email->to($ticket->email);
+		$this->email->reply_to($this->data['config']->system_email, $this->session->userdata('sitename'));
+		$this->email->subject('[RESOLU] '.$ticket->title);
+		$this->email->message($message);
+		@$this->email->send();
 
 		redirect('admin/ticket/'.$ticket->id, 'refresh');
 	}

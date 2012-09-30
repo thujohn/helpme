@@ -16,7 +16,7 @@ class Tickets_model extends CI_Model{
 	}
 
 	function get_ticket($where = array()){
-		return $this->db->select('T.*, A.file_name, A.raw_name, U.email')
+		return $this->db->select('T.*, A.file_name, A.raw_name, U.lastname, U.firstname, U.email')
 						->from($this->table_tickets.' AS T')
 						->join($this->table_attachments.' AS A', 'A.id = T.attachment_id', 'left')
 						->join($this->table_users.' AS U', 'U.id = T.user_id', 'left')
