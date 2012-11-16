@@ -43,4 +43,7 @@ if ($ticket->state == 'open'){
 		<button href="submit" class="btn btn-info pull-right">Répondre</button>
 	</form>
 	<?php endif; ?>
+	<?php if ($ticket->state == 'close') : ?>
+		<?php echo anchor('tickets/reopen/'.$ticket->id, 'Ré-ouvrir', 'class="btn btn-success"'); ?>
+	<?php endif; ?>
 </div>

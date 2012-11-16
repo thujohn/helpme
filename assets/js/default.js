@@ -15,4 +15,13 @@ jQuery(document).ready(function(){
 			buttons: ['html', '|', 'bold', 'italic', 'deleted', 'link', '|', 'alignleft', 'aligncenter', 'alignright', 'justify', '|', 'table', 'unorderedlist', 'orderedlist', 'outdent', 'indent', '|', 'horizontalrule']
 		});
 	}
+
+	if (jQuery('#frm_reply').length > 0){
+		jQuery('#frm_reply').on('submit', function(){
+			if (jQuery('#text').html() == ''){
+				alert('Vous n\'avez pas saisi de réponse !');
+				return false;
+			}
+		});
+	}
 });
