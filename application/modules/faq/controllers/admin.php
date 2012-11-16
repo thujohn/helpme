@@ -12,7 +12,7 @@ class Admin extends MY_Controller {
 
 	function index() {
 		$this->layout->set_title('FAQ');
-		$this->layout->add_js('jquery-ui-1.8.23.custom.min');
+		$this->layout->add_js('jquery-ui-1.9.1.custom.min');
 		$this->layout->add_js('sort');
 
 		$this->data['questions'] = $this->faqManager->get_all();
