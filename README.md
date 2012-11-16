@@ -1,13 +1,13 @@
 # Help me !
 
-* [Demo](http://helpme.thuau.fr/) (demo / demo)
-* [License](MIT)
+* [Demo] (http://helpme.thuau.fr/) (demo / demo)
+* [License] (http://fr.wikipedia.org/wiki/Licence_MIT)
 * Version: 1.0.1
 
 
 ## Equipe
 
-* [Jonathan Thuau](http://jonathan.thuau.fr/)
+* [Jonathan Thuau] (http://jonathan.thuau.fr/)
 
 
 ## Description
